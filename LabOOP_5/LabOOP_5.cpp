@@ -1,9 +1,18 @@
 ﻿#include <iostream>
 #include "myClasses.h"
+#include "basedesc.h"
 
 using namespace std;
 
-
+void func1(Base object) { //принимает объект
+    cout << "Функция 1\n";
+}
+void func2(Base* object) { //принимает указатель на объект и работает с объектом
+    cout << "Функция 2\n";
+}
+void func3(Base& object) { //принимает ссылку на объект и работает с ней
+    cout << "Функция 3\n";
+}
 
 int main()
 {
@@ -35,5 +44,19 @@ int main()
     system("pause");
 
     cout << "\nПередача объектов как параметров в функции:\n\n";
-    
+    cout << "Base:\n";
+    Base base_1 = new Base();
+    func1(base_1);
+    Base* base_2 = new Base();
+    func2(base_2);
+    Base base_3 = new Base();
+    func3(base_3);
+
+    cout << "\nDesc:\n";
+    Base desc_1 = new Desc();
+    func1(desc_1);
+    Base *desc_2 = new Desc();
+    func2(desc_2);
+    Base desc_3 = new Desc();
+    func3(desc_3);
 }
