@@ -23,4 +23,15 @@ int main()
 
     system("pause");
 
+    cout << "\n\nПриведение типов dynamic_cast:\n\n";
+    Cedar* cedar_2 = dynamic_cast<Cedar*>(derevo_2);
+    cout << cedar_2->classname() << endl;
+    cedar_2->Method();
+    derevo_2->Method();
+    cout << endl;
+
+    system("pause");
+
+    cout << "\nПередача объектов как параметров в функции:\n\n";
+
 }
