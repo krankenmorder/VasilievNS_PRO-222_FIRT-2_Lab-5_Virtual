@@ -34,8 +34,27 @@ public:
 		cout << "Конструктор копирования Tree.\n";
 	}
 
-	~Tree() {
+	virtual ~Tree() {
 		cout << "Деструктор Tree.\n";
+	}
+
+	virtual string classname() {
+		cout << "Виртуальный метод classname Tree.\n";
+		return ClassName;
+	}
+
+	virtual bool isA(string classname) {
+		cout << "Виртуальный метод isA Tree.\n";
+		if (classname == ClassName) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
+	}
+
+	void Method() {
+		cout << "Метод Tree.\n";
 	}
 };
 
@@ -67,5 +86,24 @@ public:
 
 	~Cedar() {
 		cout << "Деструктор Cedar.\n";
+	}
+
+	string classname() {
+		cout << "Невиртуальный метод classname Cedar.\n";
+		return ClassName;
+	}
+
+	bool isA(string classname) {
+		cout << "Невиртуальный метод isA Cedar.\n";
+		if (classname == ClassName) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
+	}
+
+	void Method() {
+		cout << "Метод Cedar.\n";
 	}
 };
