@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
@@ -33,5 +35,5 @@ int main()
     system("pause");
 
     cout << "\nПередача объектов как параметров в функции:\n\n";
-
+    
 }

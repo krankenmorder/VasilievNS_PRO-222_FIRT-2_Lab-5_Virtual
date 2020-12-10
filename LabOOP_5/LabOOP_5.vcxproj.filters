@@ -23,5 +23,8 @@
     <ClInclude Include="myClasses.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="basedesc.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

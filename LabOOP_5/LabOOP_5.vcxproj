@@ -142,6 +142,7 @@
     <ClCompile Include="LabOOP_5.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="basedesc.h" />
     <ClInclude Include="myClasses.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
